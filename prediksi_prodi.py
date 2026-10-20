@@ -29,3 +29,8 @@ for i in range(10):
                      bd=0, insertbackground="white")
     entry.grid(row=i, column=1, padx=10, pady=6)
     daftar_entry.append(entry)
+ 
+# Tambah teks "Pilihan Jurusan Anda:" di bawah daftar input
+label_pilihan = tk.Label(root, text="Pilihan Jurusan Anda:",
+                         font=("Arial", 10, "bold"), bg=BG, fg="white")
+label_pilihan.pack(pady=(25, 5))
