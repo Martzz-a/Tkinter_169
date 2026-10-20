@@ -13,3 +13,7 @@ root.config(bg=BG)
 judul = tk.Label(root, text="Aplikasi Prediksi Prodi Pilihan",
                  font=("Arial", 16, "bold"), bg=BG, fg="white")
 judul.pack(pady=25)
+ 
+# Buat frame untuk menampung 10 baris input nilai
+frame_input = tk.Frame(root, bg=BG)
+frame_input.pack()
