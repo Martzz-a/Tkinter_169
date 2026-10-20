@@ -56,3 +56,9 @@ def hasil_prediksi():
     label_hasil = tk.Label(jendela_hasil, text="Prediksi Prodi: Teknologi Informasi",
                            font=("Arial", 12, "bold"), bg=BG, fg="cyan")
     label_hasil.pack(expand=True)
+  
+# Tambah tombol "Hasil Prediksi" yang memanggil fungsi hasil_prediksi
+tombol = tk.Button(root, text="Hasil Prediksi", font=("Arial", 10, "bold"),
+                   bg=BG, fg="white", relief="solid", bd=1,
+                   command=hasil_prediksi)
+tombol.pack(pady=25)
