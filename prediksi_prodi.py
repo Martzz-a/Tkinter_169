@@ -34,3 +34,13 @@ for i in range(10):
 label_pilihan = tk.Label(root, text="Pilihan Jurusan Anda:",
                          font=("Arial", 10, "bold"), bg=BG, fg="white")
 label_pilihan.pack(pady=(25, 5))
+ 
+# Buat dropdown pilihan prodi dengan OptionMenu, bawaan "Teknologi Informasi"
+daftar_prodi = ["Teknologi Informasi", "Teknik Sipil", "Teknik Mesin",
+                "Teknik Elektro", "Arsitektur"]
+pilihan = tk.StringVar()
+pilihan.set("Teknologi Informasi")
+ 
+dropdown = tk.OptionMenu(root, pilihan, *daftar_prodi)
+dropdown.config(bg=ENTRY_BG, fg="white", width=18, bd=0)
+dropdown.pack()
