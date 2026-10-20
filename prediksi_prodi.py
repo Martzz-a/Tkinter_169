@@ -51,3 +51,8 @@ def hasil_prediksi():
     jendela_hasil.title("Hasil Prediksi")
     jendela_hasil.geometry("380x130")
     jendela_hasil.config(bg=BG)
+ 
+    # Tampilkan label hasil; selalu "Teknologi Informasi" apa pun inputnya
+    label_hasil = tk.Label(jendela_hasil, text="Prediksi Prodi: Teknologi Informasi",
+                           font=("Arial", 12, "bold"), bg=BG, fg="cyan")
+    label_hasil.pack(expand=True)
