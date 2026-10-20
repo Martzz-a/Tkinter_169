@@ -17,3 +17,15 @@ judul.pack(pady=25)
 # Buat frame untuk menampung 10 baris input nilai
 frame_input = tk.Frame(root, bg=BG)
 frame_input.pack()
+ 
+# Buat 10 label "Nilai Mata Pelajaran N:" rata kanan dengan grid dan 10 kolom input (Entry) di samping label dan simpan ke daftar
+daftar_entry = []
+for i in range(10):
+    label = tk.Label(frame_input, text="Nilai Mata Pelajaran " + str(i + 1) + ":",
+                     font=("Arial", 10, "bold"), bg=BG, fg="white")
+    label.grid(row=i, column=0, sticky="e", padx=10, pady=6)
+ 
+    entry = tk.Entry(frame_input, width=18, bg=ENTRY_BG, fg="white",
+                     bd=0, insertbackground="white")
+    entry.grid(row=i, column=1, padx=10, pady=6)
+    daftar_entry.append(entry)
