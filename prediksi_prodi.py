@@ -44,3 +44,10 @@ pilihan.set("Teknologi Informasi")
 dropdown = tk.OptionMenu(root, pilihan, *daftar_prodi)
 dropdown.config(bg=ENTRY_BG, fg="white", width=18, bd=0)
 dropdown.pack()
+ 
+# Buat fungsi hasil_prediksi yang membuka jendela baru (Toplevel)
+def hasil_prediksi():
+    jendela_hasil = tk.Toplevel(root)
+    jendela_hasil.title("Hasil Prediksi")
+    jendela_hasil.geometry("380x130")
+    jendela_hasil.config(bg=BG)
