@@ -62,3 +62,6 @@ tombol = tk.Button(root, text="Hasil Prediksi", font=("Arial", 10, "bold"),
                    bg=BG, fg="white", relief="solid", bd=1,
                    command=hasil_prediksi)
 tombol.pack(pady=25)
+
+# Jalankan event loop supaya jendela tampil dan bisa diklik
+root.mainloop()
